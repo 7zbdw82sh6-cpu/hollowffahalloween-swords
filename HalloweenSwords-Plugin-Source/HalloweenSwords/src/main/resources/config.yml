@@ -1,0 +1,80 @@
+# Item the swords are built on (the custom model replaces how it looks).
+base-material: NETHERITE_SWORD
+
+targeting:
+  # How far (in blocks) you can aim target-based abilities
+  range: 25
+
+# item_model key for each sword. Must match a file in the resource pack:
+#   assets/halloween/items/<name>.json   ->  "halloween:<name>"
+# Phantom Fang / Gravekeeper share a model, and Nightfang / Widowmaker share one,
+# because you only have 5 models for 7 swords. Point them at new models any time.
+models:
+  jack_o_blade: "halloween:hollow_lantern"
+  phantom_fang: "halloween:bone_ripper"
+  gravekeeper: "halloween:bone_ripper"
+  bloodmoon_blade: "halloween:candy_carver"
+  nightfang: "halloween:arachnid_fang"
+  cursed_blade: "halloween:witch_thorn"
+  widowmaker: "halloween:arachnid_fang"
+
+# Cooldowns in seconds
+cooldowns:
+  pumpkin_bomb: 45
+  trick_or_treat: 70
+  haunt: 50
+  ghostwalk: 75
+  grave_grip: 55
+  rise_from_below: 80
+  blood_hunt: 55
+  blood_moon: 90
+  bat_swarm: 45
+  night_flight: 65
+  hex: 60
+  possession: 90
+  web_shot: 45
+  spiders_feast: 75
+
+# Ability tuning (damage is in half-hearts: 2.0 = 1 heart)
+abilities:
+  pumpkin-bomb:
+    damage: 8.0
+    radius: 4.0
+    fire-seconds: 5
+  trick-or-treat:
+    bad-chance: 0.12
+  haunt:
+    duration-seconds: 5
+  ghostwalk:
+    duration-seconds: 6
+  grave-grip:
+    duration-seconds: 3
+  rise-from-below:
+    duration-seconds: 8
+    count: 5
+  blood-hunt:
+    duration-seconds: 10
+    heal-per-hit: 2.0
+  blood-moon:
+    duration-seconds: 8
+    heal-per-kill: 6.0
+  bat-swarm:
+    duration-seconds: 6
+    count: 8
+    damage: 1.0
+    damage-interval-ticks: 20
+  night-flight:
+    forward: 1.3
+    up: 0.9
+    no-fall-seconds: 8
+  hex:
+    duration-seconds: 8
+    reflect-damage: 2.0
+  possession:
+    duration-seconds: 4
+  web-shot:
+    web-seconds: 5
+  spiders-feast:
+    duration-seconds: 8
+    radius: 5.0
+    place-cobwebs: true

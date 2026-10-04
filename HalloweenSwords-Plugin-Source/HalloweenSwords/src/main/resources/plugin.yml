@@ -1,0 +1,17 @@
+name: HalloweenSwords
+version: '1.0.0'
+main: com.halloweenswords.HalloweenSwords
+api-version: '1.21'
+description: Seven Halloween swords with two abilities each.
+commands:
+  hsword:
+    description: Give or manage Halloween swords
+    usage: /hsword <give|list|reload|resetcd>
+    aliases: [halloweensword]
+permissions:
+  halloweenswords.admin:
+    description: Use /hsword
+    default: op
+  halloweenswords.use:
+    description: Use sword abilities
+    default: true
